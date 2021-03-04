@@ -168,7 +168,10 @@
 
     <div class="row">
       <div class="col">
-        <img src="rotating_avatar.gif" class="card-img-top">
+        <video autoplay muted loop id="myVideo" class="card-img-top">
+          <source src="penny3.mp4" type="video/mp4">
+        </video>
+        <!-- <img src="rotating_avatar.gif" class="card-img-top"> -->
       </div>
 
 
@@ -192,10 +195,15 @@
 
 <script>
   window.watsonAssistantChatOptions = {
-    integrationID: "949ad95d-4cc7-4a20-91d3-ba5255d1e08a", // The ID of this integration.
+
+    integrationID: "663600b7-cbfd-432a-bd07-7b4fe7997bca", // The ID of this integration.
     region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "3ff06e87-9914-4552-8f59-43ea6526aea8", // The ID of your service instance.
-    
+    serviceInstanceID: "57188947-a0a2-4c07-9b46-3dd8c133b1b1", // The ID of your service instance.
+
+  ///  integrationID: "949ad95d-4cc7-4a20-91d3-ba5255d1e08a", // The ID of this integration.
+  ///  region: "us-south", // The region your integration is hosted in.
+  ///  serviceInstanceID: "3ff06e87-9914-4552-8f59-43ea6526aea8", // The ID of your service instance.
+
     showLauncher: false,
     onLoad: function(instance) {
       // Select the button element from the page.

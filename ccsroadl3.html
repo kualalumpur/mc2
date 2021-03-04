@@ -168,7 +168,10 @@
 
     <div class="row">
       <div class="col">
-        <img src="chatbot_avatar.png" class="card-img-top">
+        <video autoplay muted loop id="myVideo" class="card-img-top">
+          <source src="penny3.mp4" type="video/mp4">
+        </video>
+        <!-- <img src="rotating_avatar.gif" class="card-img-top"> -->
       </div>
 
 
@@ -185,17 +188,22 @@
 <!-- We want to hide this element initially, because Web Chat isn't ready yet. -->
   <button type="button" class="chatLauncher" style="display:none;">
     <section>
-      <img src="chatbotpic_resized.png">
+      <img src="headshot_human_resized_100.png">
+      <!-- <img src="chatbotpic_resized.png"> -->
       <div><strong>Ready to start?</strong> Click here to chat with Penny, your Virtual Coach.</div>
     </section>
   </button>
 
 <script>
   window.watsonAssistantChatOptions = {
-    integrationID: "531318b7-1a03-487b-b288-d35013d10b7c", // The ID of this integration.
+    integrationID: "922031c7-e234-4932-a1cf-c25bc7d037c5", // The ID of this integration.
     region: "us-south", // The region your integration is hosted in.
-    serviceInstanceID: "3ff06e87-9914-4552-8f59-43ea6526aea8", // The ID of your service instance.
+    serviceInstanceID: "57188947-a0a2-4c07-9b46-3dd8c133b1b1", // The ID of your service instance.
     
+    /// integrationID: "531318b7-1a03-487b-b288-d35013d10b7c", // The ID of this integration.
+    /// region: "us-south", // The region your integration is hosted in.
+    /// serviceInstanceID: "3ff06e87-9914-4552-8f59-43ea6526aea8", // The ID of your service instance.
+
     showLauncher: false,
     onLoad: function(instance) {
       // Select the button element from the page.
